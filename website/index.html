@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Delusional am I?</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="main">
+        <div class="category_box">
+            <div class="category_header">Gender</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items gender">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Age</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items cb_slider age">
+                <div class="range_container">
+                    <div class="sliders_control">
+                        <input id="fromSliderAge" type="range" value="18" min="18" max="115"/>
+                        <input id="toSliderAge" type="range" value="25" min="18" max="115"/>
+                    </div>
+                    <div class="values_control">
+                        <div id="fromInputAge" class="outputvalue">18</div>
+                        <div>to</div>
+                        <div id="toInputAge" class="outputvalue">25</div>
+                        <div>[years]</div>
+                        <div id="agePercentOutput">Around 13.10% of population</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Race</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items race">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Skin Color</div>
+            <div class="category_box_items skin_color">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Height</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items cb_slider height">
+                <div class="range_container">
+                    <div class="sliders_control">
+                        <input id="fromSliderHeight" type="range" value="150" min="119" max="227"/>
+                        <input id="toSliderHeight" type="range" value="180" min="119" max="227"/>
+                    </div>
+                    <div class="values_control">
+                        <div id="fromInputHeight" class="outputvalue">150</div>
+                        <div>to </div>
+                        <div id="toInputHeight" class="outputvalue">180</div>
+                        <div>[cm]</div>
+                        <div id="heightPercentOutput">Close to 79.80% of the sample</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Weight</div>
+            <div class="under_header">Percents will be added to themselves.<br>Select to exclude.</div>
+            <div class="category_box_items weight">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Eye Color</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items eye_color">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Hair Color</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items hair_color">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Language</div>
+            <div class="under_header">Percents will be multiplied by themselves.</div>
+            <div class="category_box_items language">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Excercise</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items excercise">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Income</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items cb_slider income">
+                <div class="range_container">
+                    <div class="sliders_control">
+                        <input id="incomeSlider" type="range" value="5" min="0" max="236"/>
+                    </div>
+                    <div class="values_control2">
+                        <div>More than</div>
+                        <div id="incomeOutput1" class="outputvalue">$28.75k</div>
+                        <div>/</div>
+                        <div id="incomeOutput2" class="outputvalue">£25k</div>
+                        <div id="incomePercentOutput">Around 68.10% of the population</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header">Religion</div>
+            <div class="under_header">Percents will be added to themselves.</div>
+            <div class="category_box_items religion">
+            </div>
+        </div>
+        <div class="category_box">
+            <div class="category_header"><div id="getResult">Get Results</div></div>
+            <div class="category_box_items result">
+                <div id="results">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="ageSlider.js"></script>
+    <script src="heightSlider.js"></script>
+    <script src="incomeSlider.js"></script>
+    <script src="calculatePercent.js"></script>
+    <script src="getResult.js"></script>
+</body>
+</html>
